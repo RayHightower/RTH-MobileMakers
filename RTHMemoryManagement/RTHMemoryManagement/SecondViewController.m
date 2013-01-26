@@ -40,4 +40,9 @@
     [_string release];
     [super dealloc];
 }
+
+
+- (IBAction)closeSecond:(id)sender {
+    [self.view removeFromSuperview];
+}
 @end

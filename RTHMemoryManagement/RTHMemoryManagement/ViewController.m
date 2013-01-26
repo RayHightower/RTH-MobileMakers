@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     self.title =@"RTH ViewController";
-	items =[[NSArray alloc] initWithObjects:@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",@"one",@"two",@"three",nil];
+	items =[[NSArray alloc] initWithObjects:@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",@"one",@"two",@"three",@"four",@"five",@"six",@"seven",@"eight",nil];
             
 }
 

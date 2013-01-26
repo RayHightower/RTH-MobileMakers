@@ -13,4 +13,6 @@
 
 @property (retain, nonatomic) IBOutlet UILabel *string;
 
+- (IBAction)closeSecond:(id)sender;
+
 @end
