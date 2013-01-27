@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)sliderPosition:(id)sender;
+
 @end

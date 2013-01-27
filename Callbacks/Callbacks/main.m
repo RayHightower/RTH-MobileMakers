@@ -18,6 +18,7 @@ int main(int argc, const char * argv[])
         
         Logger *logger = [[Logger alloc] init];
         
+        // warning because the var timer isn't used. Code still runs with just the method declaration, not the assignment!!!!
         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                                           target:logger
                                                         selector:@selector(sayOuch:)
