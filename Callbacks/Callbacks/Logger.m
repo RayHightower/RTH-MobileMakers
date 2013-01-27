@@ -10,4 +10,9 @@
 
 @implementation Logger
 
+-(void)sayOuch:(NSTimer *)t
+{
+    NSLog(@"\nOuch! I mean ouch!!");
+}
+
 @end

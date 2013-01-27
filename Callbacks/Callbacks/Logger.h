@@ -10,4 +10,6 @@
 
 @interface Logger : NSObject
 
+-(void)sayOuch:(NSTimer *)t;
+
 @end

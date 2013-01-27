@@ -7,11 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Logger.h"
+
+
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        
+        Logger *logger = [[Logger alloc] init];
+        
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0
+                                                          target:logger
+                                                        selector:@selector(sayOuch:)
+                                                        userInfo:nil
+                                                         repeats:YES];
+        
         
         [[NSRunLoop currentRunLoop] run];
         NSLog(@"The loop has finished.");
