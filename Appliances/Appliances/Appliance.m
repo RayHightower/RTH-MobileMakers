@@ -12,5 +12,14 @@
 
 @synthesize productName, voltage;
 
+-(id)init
+{
+    self = [super init];
+    
+    voltage = 120;
+    
+    return self;
+    
+}
 
 @end
