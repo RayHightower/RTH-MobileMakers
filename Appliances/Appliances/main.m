@@ -7,14 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Appliance.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"\nExercising the Appliances Command Line App\n");
+        
+        Appliance *a = [[Appliance alloc] init];
+        NSLog(@"a is %a", a);
+        
+        [a setProductName:@"Refridgerator of Stainless Steel"];
+        [a setVoltage:240];
+        NSLog(@"a is %a", a);
         
     }
     return 0;
