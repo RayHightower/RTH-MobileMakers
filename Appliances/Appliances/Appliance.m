@@ -33,7 +33,7 @@
 
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %d volts", productName, voltage];
+    return [NSString stringWithFormat:@"<%@: %d volts>", productName, voltage];
     
 }
 

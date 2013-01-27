@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Appliance : NSObject {
-    NSString *productName;
-    int voltage;
+
+    // NSString *productName;
+    // int voltage;
 }
 
 @property (copy) NSString *productName;
