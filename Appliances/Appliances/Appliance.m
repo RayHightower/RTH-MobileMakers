@@ -10,4 +10,7 @@
 
 @implementation Appliance
 
+@synthesize productName, voltage;
+
+
 @end
