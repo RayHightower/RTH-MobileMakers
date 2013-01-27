@@ -17,11 +17,11 @@ int main(int argc, const char * argv[])
         NSLog(@"\nExercising the Appliances Command Line App\n");
         
         Appliance *a = [[Appliance alloc] init];
-        NSLog(@"a is %a", a);
+        NSLog(@"a is %@", a);
         
         [a setProductName:@"Refridgerator of Stainless Steel"];
         [a setVoltage:240];
-        NSLog(@"a is %a", a);
+        NSLog(@"a is %@", a);
         
     }
     return 0;
