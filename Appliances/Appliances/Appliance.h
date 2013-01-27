@@ -14,7 +14,7 @@
     // int voltage;
 }
 
-@property (copy) NSString *productName;
+@property (copy) NSString *productName;     // Why make a copy? Why not instantiate a new object?
 @property int voltage;
 
 
