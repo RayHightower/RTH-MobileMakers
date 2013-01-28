@@ -10,6 +10,7 @@
 		6F18841116B7110C009E4721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F18841016B7110C009E4721 /* Foundation.framework */; };
 		6F18841416B7110C009E4721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F18841316B7110C009E4721 /* main.m */; };
 		6F18841816B7110C009E4721 /* Stocks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F18841716B7110C009E4721 /* Stocks.1 */; };
+		6F18842016B71197009E4721 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F18841F16B71197009E4721 /* StockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		6F18841316B7110C009E4721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F18841616B7110C009E4721 /* Stocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Prefix.pch"; sourceTree = "<group>"; };
 		6F18841716B7110C009E4721 /* Stocks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Stocks.1; sourceTree = "<group>"; };
+		6F18841E16B71197009E4721 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
+		6F18841F16B71197009E4721 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		6F18840116B7110C009E4721 = {
 			isa = PBXGroup;
 			children = (
+				6F18841E16B71197009E4721 /* StockHolding.h */,
+				6F18841F16B71197009E4721 /* StockHolding.m */,
 				6F18841216B7110C009E4721 /* Stocks */,
 				6F18840F16B7110C009E4721 /* Frameworks */,
 				6F18840D16B7110C009E4721 /* Products */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F18841416B7110C009E4721 /* main.m in Sources */,
+				6F18842016B71197009E4721 /* StockHolding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
