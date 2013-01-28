@@ -10,4 +10,19 @@
 
 @interface ViewController : UIViewController
 
+
+@property (strong, nonatomic) IBOutlet UILabel *displayedWord;
+
+
+- (IBAction)enterLetter:(id)sender;
+
+
+
+- (IBAction)newGame:(id)sender;
+
+
+- (IBAction)currentLetterGuessed:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *failedGuesses;
+
 @end
