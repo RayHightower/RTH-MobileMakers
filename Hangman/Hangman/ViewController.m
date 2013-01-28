@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    displayedWord.label.text = @"_ _ _ _ _ _ _";
+    // displayedWord.label.text = @"_ _ _ _ _ _ _";
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -12,5 +12,6 @@
 
 @property float purchaseSharePrice;
 @property float currentSharePrice;
+@property int numberOfShares;
 
 @end

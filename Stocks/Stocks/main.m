@@ -7,14 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StockHolding.h"
+
+// Array with three instances of StockHolding (to start)
+// NSArray *portfolio = [@"Apple", @"IBM", @"HewlettPackard", nil];
+
+StockHolding *holding;
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+
+        [holding setPurchaseSharePrice:123.45];
+        [holding setCurrentSharePrice:491.03];
+        [holding setNumberOfShares:300];
+
+        NSLog(@"\n\n** Portfolio Listing **\n");
+        NSLog(@"\nPurchase Share Price = %f", [holding purchaseSharePrice]);
+        NSLog(@"\nCurrent Share Price = %f", [holding purchaseSharePrice]);
+        NSLog(@"\nNumber of shares in portfolio = %f", [holding purchaseSharePrice]);
         
-        // insert code here...
-        NSLog(@"Hello, World!");
         
     }
     return 0;

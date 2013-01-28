@@ -12,6 +12,16 @@
 
 @synthesize purchaseSharePrice;
 @synthesize currentSharePrice;
+@synthesize numberOfShares;
 
+-(float)costInDollars
+{
+    
+}
+
+-(float)valueInDollars
+{
+    
+}
 
 @end
