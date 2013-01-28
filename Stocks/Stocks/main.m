@@ -10,7 +10,9 @@
 #import "StockHolding.h"
 
 // Array with three instances of StockHolding (to start)
-// NSArray *portfolio = [@"Apple", @"IBM", @"HewlettPackard", nil];
+// NSArray *portfolio = [[StockHolding alloc] init];
+
+// NSMutableArray *portfolio; // Array of pointers to shares held in the portfolio
 
 StockHolding *holding;
 
@@ -24,11 +26,20 @@ int main(int argc, const char * argv[])
         [holding setNumberOfShares:300];
 
         NSLog(@"\n\n** Portfolio Listing **\n");
-        NSLog(@"\nPurchase Share Price = %f", [holding purchaseSharePrice]);
-        NSLog(@"\nCurrent Share Price = %f", [holding purchaseSharePrice]);
-        NSLog(@"\nNumber of shares in portfolio = %f", [holding purchaseSharePrice]);
+        NSLog(@"\n(holding) Purchase Share Price = %f", [holding purchaseSharePrice]);
+        NSLog(@"\n(holding) Current Share Price = %f", [holding currentSharePrice]);
+        NSLog(@"\n(holding) # of Shares Held = %d", [holding numberOfShares]);
+
+/*
+        [portfolio[0] setPurchaseSharePrice:283.45];
+        [portfolio[0] setCurrentSharePrice:98.43];
+        [portfolio[0] setNumberOfShares:500];
         
-        
+        NSLog(@"\n\nPurchase Share Price = %f", [portfolio[0] purchaseSharePrice]);
+        NSLog(@"\nCurrent Share Price = %f", [portfolio[0] currentSharePrice]);
+        NSLog(@"\n# of Shares Held = %d", [portfolio[0] numberOfShares]);
+*/
+ 
     }
     return 0;
 }
