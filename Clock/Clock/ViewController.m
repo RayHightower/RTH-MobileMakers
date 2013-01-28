@@ -51,7 +51,7 @@
 // automatically update the time every second
     
     // NSDateFormatter courtesy of Stack Overflow
-    // Repeating this violates DRY!!!
+    // Repeating this violates DRY!!! Maybe I should refactor it out into a separate method?
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setFormatterBehavior:NSDateFormatterBehavior10_4];
     [formatter setDateStyle:NSDateFormatterNoStyle];
