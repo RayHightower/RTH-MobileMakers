@@ -14,21 +14,21 @@
 
 // NSMutableArray *portfolio; // Array of pointers to shares held in the portfolio
 
-StockHolding *holding;
+StockHolding *holding;      // one instance of the class holding stock info
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
 
-        [holding setPurchaseSharePrice:123.45];
-        [holding setCurrentSharePrice:491.03];
+        [holding setPurchaseSharePrice:123.45f];
+        [holding setCurrentSharePrice:491.03f];
         [holding setNumberOfShares:300];
 
         NSLog(@"\n\n** Portfolio Listing **\n");
-        NSLog(@"\n(holding) Purchase Share Price = %f", [holding purchaseSharePrice]);
-        NSLog(@"\n(holding) Current Share Price = %f", [holding currentSharePrice]);
-        NSLog(@"\n(holding) # of Shares Held = %d", [holding numberOfShares]);
+        NSLog(@"\n(holding) Purchase Share Price = %f\n\n", [holding purchaseSharePrice]);
+        NSLog(@"\n(holding) Current Share Price = %f\n\n", [holding currentSharePrice]);
+        NSLog(@"\n(holding) # of Shares Held = %d\n\n", [holding numberOfShares]);
 
 /*
         [portfolio[0] setPurchaseSharePrice:283.45];
