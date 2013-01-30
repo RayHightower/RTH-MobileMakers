@@ -36,19 +36,14 @@ int main(int argc, const char * argv[])
         
         for (i = 0; i < 10; i++) {
 
-            [portfolio objectAtIndex:i] = [[StockHolding alloc] init];
+            [portfolio addObject:holding];
+            [[portfolio objectAtIndex:i] setPurchaseSharePrice:283.45f];
+            [[portfolio objectAtIndex:i] setCurrentSharePrice:98.43f];
+            [[portfolio objectAtIndex:i] setNumberOfShares:(500*i)];
 
-            [portfolio[i] setPurchaseSharePrice:283.45f];
-            [portfolio[i] setCurrentSharePrice:98.43f];
-
-            [portfolio[i] setCurrentSharePrice:98.43f];
-
-            
-            [[portfolio indexOfObject:i] setNumberOfShares:(500*i)];
-
-            NSLog(@"\n\n** portfolio[%d] Purchase Share Price = %f\n\n", i, [portfolio[i] purchaseSharePrice]);
-            NSLog(@"\n** portfolio[%d] Current Share Price = %f\n\n", i, [portfolio[i] currentSharePrice]);
-            NSLog(@"\n** portfolio[%d] # of Shares Held = %d\n\n", i, [portfolio[i] numberOfShares]);
+            NSLog(@"\n\n** [[portfolio objectAtIndex:%d] purchaseSharePrice] = %f\n\n", i, [[portfolio objectAtIndex:i] purchaseSharePrice]);
+            NSLog(@"\n** [[portfolio objectAtIndex:%d] currentSharePrice] = %f\n\n", i, [[portfolio objectAtIndex:i] currentSharePrice]);
+            NSLog(@"\n** [[portfolio objectAtIndex:%d] numberOfShares] = %d\n\n", i, [[portfolio objectAtIndex:i] numberOfShares]);
 
         }
  
