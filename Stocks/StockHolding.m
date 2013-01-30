@@ -16,12 +16,12 @@
 
 -(float)costInDollars
 {
-    
+    return numberOfShares * purchaseSharePrice;
 }
 
 -(float)valueInDollars
 {
-    
+    return numberOfShares * currentSharePrice;
 }
 
 @end
