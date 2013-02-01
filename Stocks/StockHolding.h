@@ -14,4 +14,7 @@
 @property float currentSharePrice;
 @property int numberOfShares;
 
+@property float costInDollars;
+@property float valueInDollars;
+
 @end

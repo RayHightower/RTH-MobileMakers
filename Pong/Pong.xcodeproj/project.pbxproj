@@ -12,6 +12,9 @@
 		93528775162F19530024FDBE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93528773162F19530024FDBE /* IntroViewController.xib */; };
 		93528779162F31390024FDBE /* SFAtarianSystem.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93528778162F31390024FDBE /* SFAtarianSystem.ttf */; };
 		93858CF51625C648004521EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93858CF41625C648004521EA /* QuartzCore.framework */; };
+		9397FBA616B74C3A00FD9FF2 /* PaddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9397FBA516B74C3A00FD9FF2 /* PaddleView.m */; };
+		9397FBB016B7683B00FD9FF2 /* CountDownViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9397FBAE16B7683B00FD9FF2 /* CountDownViewViewController.m */; };
+		9397FBB116B7683B00FD9FF2 /* CountDownViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9397FBAF16B7683B00FD9FF2 /* CountDownViewViewController.xib */; };
 		93F156A216231B4A0002BBD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F156A116231B4A0002BBD6 /* UIKit.framework */; };
 		93F156A416231B4A0002BBD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F156A316231B4A0002BBD6 /* Foundation.framework */; };
 		93F156A616231B4A0002BBD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F156A516231B4A0002BBD6 /* CoreGraphics.framework */; };
@@ -33,6 +36,11 @@
 		93528773162F19530024FDBE /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		93528778162F31390024FDBE /* SFAtarianSystem.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFAtarianSystem.ttf; path = Pong/Fonts/SFAtarianSystem.ttf; sourceTree = "<group>"; };
 		93858CF41625C648004521EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9397FBA416B74C3A00FD9FF2 /* PaddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddleView.h; sourceTree = "<group>"; };
+		9397FBA516B74C3A00FD9FF2 /* PaddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddleView.m; sourceTree = "<group>"; };
+		9397FBAD16B7683B00FD9FF2 /* CountDownViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountDownViewViewController.h; path = Pong/CountDownViewViewController.h; sourceTree = "<group>"; };
+		9397FBAE16B7683B00FD9FF2 /* CountDownViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountDownViewViewController.m; path = Pong/CountDownViewViewController.m; sourceTree = "<group>"; };
+		9397FBAF16B7683B00FD9FF2 /* CountDownViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CountDownViewViewController.xib; path = Pong/CountDownViewViewController.xib; sourceTree = "<group>"; };
 		93F1569D16231B4A0002BBD6 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F156A116231B4A0002BBD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93F156A316231B4A0002BBD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +85,9 @@
 		93F1569216231B4A0002BBD6 = {
 			isa = PBXGroup;
 			children = (
+				9397FBAD16B7683B00FD9FF2 /* CountDownViewViewController.h */,
+				9397FBAE16B7683B00FD9FF2 /* CountDownViewViewController.m */,
+				9397FBAF16B7683B00FD9FF2 /* CountDownViewViewController.xib */,
 				93F156A716231B4A0002BBD6 /* Pong */,
 				93528777162F312A0024FDBE /* Fonts */,
 				93F156A816231B4A0002BBD6 /* Supporting Files */,
@@ -107,6 +118,8 @@
 		93F156A716231B4A0002BBD6 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
+				9397FBA416B74C3A00FD9FF2 /* PaddleView.h */,
+				9397FBA516B74C3A00FD9FF2 /* PaddleView.m */,
 				93F156B016231B4A0002BBD6 /* AppDelegate.h */,
 				93F156B116231B4A0002BBD6 /* AppDelegate.m */,
 				93F156B916231B4A0002BBD6 /* GameViewController.h */,
@@ -194,6 +207,7 @@
 				93F156BE16231B4A0002BBD6 /* GameViewController.xib in Resources */,
 				93528775162F19530024FDBE /* IntroViewController.xib in Resources */,
 				93528779162F31390024FDBE /* SFAtarianSystem.ttf in Resources */,
+				9397FBB116B7683B00FD9FF2 /* CountDownViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +222,12 @@
 				93F156B216231B4A0002BBD6 /* AppDelegate.m in Sources */,
 				93F156BB16231B4A0002BBD6 /* GameViewController.m in Sources */,
 				93528774162F19530024FDBE /* IntroViewController.m in Sources */,
+<<<<<<< HEAD
 				6F18842F16B74D18009E4721 /* PaddleView.m in Sources */,
+=======
+				9397FBA616B74C3A00FD9FF2 /* PaddleView.m in Sources */,
+				9397FBB016B7683B00FD9FF2 /* CountDownViewViewController.m in Sources */,
+>>>>>>> 004afb1f3b0a875628c825228c4f318e5b540ff3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

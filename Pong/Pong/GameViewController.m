@@ -11,8 +11,13 @@
 
 @interface GameViewController ()
 {
+<<<<<<< HEAD
     IBOutlet PaddleView*    rightPaddleView;    // 
     IBOutlet PaddleView*    leftPaddleView;
+=======
+    IBOutlet PaddleView *rightPaddleView;
+    IBOutlet PaddleView *leftPaddleView;
+>>>>>>> 004afb1f3b0a875628c825228c4f318e5b540ff3
     IBOutlet UIView*        ballView;
     int                     directionY;
     int                     directionX;
@@ -38,6 +43,8 @@ int rightScore = 0;
     ballView.center = self.view.center;
     directionX = directionY = 1;
     
+    rightPaddleView.autoPlay = YES;
+    leftPaddleView.autoPlay = NO;
     [self startGameTimer];
 }
 
@@ -90,6 +97,7 @@ int rightScore = 0;
     }
     
     ballView.center = CGPointMake(ballView.center.x + directionX, ballView.center.y + directionY);
+<<<<<<< HEAD
 
     // collission detection with right paddle
     if (CGRectIntersectsRect(ballView.frame, rightPaddleView.frame)) {
@@ -104,6 +112,13 @@ int rightScore = 0;
     }
     
     
+=======
+    
+    if (CGRectIntersectsRect(ballView.frame, rightPaddleView.frame) || CGRectIntersectsRect(ballView.frame, leftPaddleView.frame)) {
+        directionX *= -1;
+        directionY *= -1;
+    }
+>>>>>>> 004afb1f3b0a875628c825228c4f318e5b540ff3
 }
 
 
@@ -119,6 +134,7 @@ int rightScore = 0;
 
 
 - (void)dealloc {
+<<<<<<< HEAD
     // [_paddleView release];
     [super dealloc];
 }
@@ -126,6 +142,14 @@ int rightScore = 0;
     // [self setPaddleView:nil];
     [self setLeftScoreDisplay:nil];
     [self setRightScoreDisplay:nil];
+=======
+    [rightPaddleView release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [rightPaddleView release];
+    rightPaddleView = nil;
+>>>>>>> 004afb1f3b0a875628c825228c4f318e5b540ff3
     [super viewDidUnload];
 }
 @end
