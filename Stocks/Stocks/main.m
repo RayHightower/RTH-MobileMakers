@@ -31,12 +31,12 @@ int main(int argc, const char * argv[])
         [holding setNumberOfShares:(300*2)];
 
         NSLog(@"\n\n** Portfolio Listing **\n");
-        NSLog(@"\n(holding) Purchase Share Price = %f\n\n", [holding purchaseSharePrice]);
-        NSLog(@"\n(holding) Current Share Price = %f\n\n", [holding currentSharePrice]);
+        NSLog(@"\n(holding) Purchase Share Price = %.2f\n\n", [holding purchaseSharePrice]);
+        NSLog(@"\n(holding) Current Share Price = %.2f\n\n", [holding currentSharePrice]);
         NSLog(@"\n(holding) # of Shares Held = %d\n\n", [holding numberOfShares]);
 
-        NSLog(@"\n(holding) costInDollars = %d\n\n", [holding costInDollars]);
-        NSLog(@"\n(holding) valueInDollars = %d\n\n", [holding valueInDollars]);
+        NSLog(@"\n(holding) costInDollars = %.2f\n\n", [holding costInDollars]);
+        NSLog(@"\n(holding) valueInDollars = %.2f\n\n", [holding valueInDollars]);
 
         portfolio = [[NSMutableArray alloc] init];
         
@@ -54,8 +54,8 @@ int main(int argc, const char * argv[])
             [[portfolio objectAtIndex:i] setCurrentSharePrice:98.43];
             [[portfolio objectAtIndex:i] setNumberOfShares:(500*i)];
 
-            NSLog(@"\n\n** [[portfolio objectAtIndex:%d] purchaseSharePrice] = %f\n\n", i, [[portfolio objectAtIndex:i] purchaseSharePrice]);
-            NSLog(@"\n** [[portfolio objectAtIndex:%d] currentSharePrice] = %f\n\n", i, [[portfolio objectAtIndex:i] currentSharePrice]);
+            NSLog(@"\n\n** [[portfolio objectAtIndex:%d] purchaseSharePrice] = %.2f\n\n", i, [[portfolio objectAtIndex:i] purchaseSharePrice]);
+            NSLog(@"\n** [[portfolio objectAtIndex:%d] currentSharePrice] = %.2f\n\n", i, [[portfolio objectAtIndex:i] currentSharePrice]);
             NSLog(@"\n** [[portfolio objectAtIndex:%d] numberOfShares] = %d\n\n", i, [[portfolio objectAtIndex:i] numberOfShares]);
 
         }
